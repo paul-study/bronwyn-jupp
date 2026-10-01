@@ -173,6 +173,21 @@ function App() {
             Read the Critic Te Ārohi article <span aria-hidden="true">↗</span>
           </a>
         </article>
+        <article className="decision-card article-source">
+          <p className="eyebrow">Research source · contents not independently reviewed</p>
+          <h3>Tenancy Tribunal Order 3497776</h3>
+          <p>
+            The PDF was provided as a research source. Its contents and its relevance to the
+            individuals or concerns described on this page have not been independently verified.
+          </p>
+          <a
+            href="https://tenancy.sgp1.digitaloceanspaces.com/3497776-Tribunal_Order.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open Tribunal Order 3497776 (PDF) <span aria-hidden="true">↗</span>
+          </a>
+        </article>
       </section>
 
       <section className="decisions-section" aria-labelledby="decisions-heading">
