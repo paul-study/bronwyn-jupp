@@ -60,7 +60,7 @@ const documentedConcerns = [
 const publicDecisions = [
   {
     title: 'Lincoln Darling Real Estate Limited and Bronwyn Jupp — Dunedin tenancy order (2018)',
-    detail: 'The supplied Tenancy Tribunal order records Lincoln Darling Real Estate Limited and Bronwyn Jupp as landlords. The Tribunal found the tenancy at a two-flat, six-bedroom property was not a boarding-house tenancy, so the tenant could not end the fixed-term tenancy with 48 hours’ notice. It dismissed the tenant’s bond-refund application and ordered $290.44 payable to the landlord after applying the $540 bond against the $830.44 award for rent arrears and the filing fee. This was a ruling about tenancy classification and rent/bond claims, not a finding of misconduct.',
+    detail: 'The supplied Tenancy Tribunal order records Lincoln Darling Real Estate Limited and Bronwyn Jupp as landlords. The tenant argued the room tenancy was a boarding-house tenancy and sought a bond refund after giving 48 hours’ notice; the landlord disputed that classification and claimed rent arrears. The Tribunal found the two-flat, six-bedroom property was not a boarding-house tenancy, so the tenant could not end the fixed-term tenancy with 48 hours’ notice. It dismissed the tenant’s bond-refund application and ordered $290.44 payable to the landlord after applying the $540 bond against the $830.44 award for rent arrears and the filing fee. The order does not say Jupp sought to classify the tenancy as a boarding house, nor does it record a finding of misconduct against her.',
     source: 'Tenancy Tribunal Order 4146978 (PDF)',
     href: 'https://tenancy.sgp1.digitaloceanspaces.com/4146978-Tribunal_Order.pdf',
   },
