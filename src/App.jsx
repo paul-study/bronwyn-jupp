@@ -59,6 +59,12 @@ const documentedConcerns = [
 
 const publicDecisions = [
   {
+    title: 'Lincoln Darling Real Estate Limited and Bronwyn Jupp — Dunedin tenancy order (2018)',
+    detail: 'The supplied Tenancy Tribunal order records Lincoln Darling Real Estate Limited and Bronwyn Jupp as landlords. The Tribunal found the tenancy at a two-flat, six-bedroom property was not a boarding-house tenancy, so the tenant could not end the fixed-term tenancy with 48 hours’ notice. It dismissed the tenant’s bond-refund application and ordered $290.44 payable to the landlord after applying the $540 bond against the $830.44 award for rent arrears and the filing fee. This was a ruling about tenancy classification and rent/bond claims, not a finding of misconduct.',
+    source: 'Tenancy Tribunal Order 4146978 (PDF)',
+    href: 'https://tenancy.sgp1.digitaloceanspaces.com/4146978-Tribunal_Order.pdf',
+  },
+  {
     title: 'Cutlers Limited (trading as Cutlers Property Management) — Dunedin smoke alarms',
     detail: 'Tenancy Services reports that the Tenancy Tribunal ordered Cutlers Limited to pay $6,450 in exemplary damages to MBIE on behalf of affected tenants for breaches of smoke alarm and maintenance requirements. The official summary says the Tribunal found Cutlers had acted intentionally; a fire occurred at a two-dwelling Dunedin property in September 2022, and the alarms did not activate. It also reports that the property manager recorded an upstairs alarm as compliant without testing it or recording its expiry date. The published summary describes an order against Cutlers Limited, not an individual property manager.',
     source: 'Official Tenancy Services case summary',
@@ -211,8 +217,9 @@ function App() {
           ))}
         </div>
         <p className="decision-note">
-          No verified published court or Tribunal decision about Bronwyn Jupp was located in the
-          sources checked for this update. This search result is not proof that no such decision exists.
+          The 2018 order above names Bronwyn Jupp as a landlord and addresses the specific tenancy
+          dispute described. It does not establish misconduct or determine the separate concerns
+          described elsewhere on this page.
           <a href="https://www.justice.govt.nz/tribunals/tenancy/orders/" target="_blank" rel="noreferrer">
             Search official Tribunal orders <span aria-hidden="true">↗</span>
           </a>
