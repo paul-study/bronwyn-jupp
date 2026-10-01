@@ -59,6 +59,12 @@ const documentedConcerns = [
 
 const publicDecisions = [
   {
+    title: 'Lincoln Darling Real Estate Limited and Bronwyn Jupp — Dunedin tenancy order (2018)',
+    detail: 'The supplied Tenancy Tribunal order records Lincoln Darling Real Estate Limited and Bronwyn Jupp as landlords. The tenant argued the room tenancy was a boarding-house tenancy and sought a bond refund after giving 48 hours’ notice; the landlord disputed that classification and claimed rent arrears. The Tribunal found the two-flat, six-bedroom property was not a boarding-house tenancy, so the tenant could not end the fixed-term tenancy with 48 hours’ notice. It dismissed the tenant’s bond-refund application and ordered $290.44 payable to the landlord after applying the $540 bond against the $830.44 award for rent arrears and the filing fee. The order does not say Jupp sought to classify the tenancy as a boarding house, nor does it record a finding of misconduct against her.',
+    source: 'Tenancy Tribunal Order 4146978 (PDF)',
+    href: 'https://tenancy.sgp1.digitaloceanspaces.com/4146978-Tribunal_Order.pdf',
+  },
+  {
     title: 'Cutlers Limited (trading as Cutlers Property Management) — Dunedin smoke alarms',
     detail: 'Tenancy Services reports that the Tenancy Tribunal ordered Cutlers Limited to pay $6,450 in exemplary damages to MBIE on behalf of affected tenants for breaches of smoke alarm and maintenance requirements. The official summary says the Tribunal found Cutlers had acted intentionally; a fire occurred at a two-dwelling Dunedin property in September 2022, and the alarms did not activate. It also reports that the property manager recorded an upstairs alarm as compliant without testing it or recording its expiry date. The published summary describes an order against Cutlers Limited, not an individual property manager.',
     source: 'Official Tenancy Services case summary',
@@ -154,6 +160,40 @@ function App() {
             </article>
           ))}
         </div>
+        <article className="decision-card article-source">
+          <p className="eyebrow">Research note · working material, not for publication</p>
+          <h3>Related reporting: Dunedin rental prices</h3>
+          <p>
+            A 2020 report by Critic Te Ārohi identifies Bronwyn Jupp as advertising a five-bedroom
+            Forth Street property for $1,050 per week, excluding power and internet, with a $3,150
+            bond. The article recounts student criticism of the asking price and reports that Jupp
+            was approached for comment but did not respond. This is a summary of the article for
+            research; it reports a rental advertisement and public reaction, not a Tenancy Tribunal
+            finding.
+          </p>
+          <a
+            href="https://www.critic.co.nz/news/article/8894/rental-properties-alarmingly-expensive"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Read the Critic Te Ārohi article <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+        <article className="decision-card article-source">
+          <p className="eyebrow">Research source · contents not independently reviewed</p>
+          <h3>Tenancy Tribunal Order 3497776</h3>
+          <p>
+            The PDF was provided as a research source. Its contents and its relevance to the
+            individuals or concerns described on this page have not been independently verified.
+          </p>
+          <a
+            href="https://tenancy.sgp1.digitaloceanspaces.com/3497776-Tribunal_Order.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open Tribunal Order 3497776 (PDF) <span aria-hidden="true">↗</span>
+          </a>
+        </article>
       </section>
 
       <section className="decisions-section" aria-labelledby="decisions-heading">
@@ -177,8 +217,9 @@ function App() {
           ))}
         </div>
         <p className="decision-note">
-          No verified published court or Tribunal decision about Bronwyn Jupp was located in the
-          sources checked for this update. This search result is not proof that no such decision exists.
+          The 2018 order above names Bronwyn Jupp as a landlord and addresses the specific tenancy
+          dispute described. It does not establish misconduct or determine the separate concerns
+          described elsewhere on this page.
           <a href="https://www.justice.govt.nz/tribunals/tenancy/orders/" target="_blank" rel="noreferrer">
             Search official Tribunal orders <span aria-hidden="true">↗</span>
           </a>

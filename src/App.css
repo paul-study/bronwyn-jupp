@@ -341,6 +341,12 @@ h1, h2, h3, p { margin-top: 0; }
   line-height: 1.75;
 }
 
+.article-source {
+  margin-top: 18px;
+  border: 1px solid #dcded4;
+  background: #f7f5f0;
+}
+
 .decisions-section { padding: 70px 8.3%; }
 
 .decisions-heading { max-width: 760px; margin-bottom: 25px; }
