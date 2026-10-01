@@ -22,6 +22,41 @@ const resources = [
   },
 ]
 
+const documentedConcerns = [
+  {
+    title: 'Physical security',
+    detail: 'The account says master keys were left in an unsecured public letterbox for a contractor without notifying tenants. After the keys went missing, correspondence allegedly accused a tenant who was out of town of hiding them instead of arranging a locksmith.',
+  },
+  {
+    title: 'Entry and notice practices',
+    detail: 'The account alleges an unannounced entry on September 28, 2026, to photograph the living area, alongside repeated failures to provide the written notice periods required for tradespeople and inspections.',
+  },
+  {
+    title: 'Healthy Homes documentation',
+    detail: 'The account says the Healthy Homes Assessment was not supplied within 21 days and raises concerns about the timing of an August 26 report after photographs were taken in late September for an inspector.',
+  },
+  {
+    title: 'Bond and rent accounting',
+    detail: 'The account cites Tenancy Services correspondence about a bond allegedly lodged late. It also describes a September 2026 ledger showing a $1,980 partial bond, with $1,320 unaccounted for, plus incorrect lease-year credits and inaccurate “paid to” dates.',
+  },
+  {
+    title: 'Retaliation and communication',
+    detail: 'The account alleges a 14-Day Notice for rent arrears contained impossible, backdated delivery declarations and followed requests for maintenance. It also describes accusatory correspondence about asking for standard legal notice.',
+  },
+  {
+    title: 'Maintenance response',
+    detail: 'The account alleges that a formal 14-day notice about active roof leaks and dampness was not resolved, and that a leaking shower reported in July remained incomplete. It says the dampness contributed to a tenant requiring medical attention.',
+  },
+  {
+    title: 'Contractor access',
+    detail: 'The account says contractors were not given entry notices and tenants were instead asked to act as booking agents and remain home to let handymen inside.',
+  },
+  {
+    title: 'Tenancy paperwork',
+    detail: 'The account alleges that fully executed tenancy agreements were not provided to all flatmates and that lease changes were handled by manually crossing out and adding names to a PDF rather than using Change of Tenant forms.',
+  },
+]
+
 function App() {
   const [entry, setEntry] = useState(null)
   const [submitted, setSubmitted] = useState(false)
@@ -87,6 +122,29 @@ function App() {
           <span className="principle-icon" aria-hidden="true">03</span>
           <div><h2>Support, not advice</h2><p>Listen with empathy. For legal questions, use trusted local services.</p></div>
         </article>
+      </section>
+
+      <section className="concerns-section" id="about">
+        <div className="concerns-heading">
+          <p className="eyebrow">Tenant account · September 2026</p>
+          <h2>Concerns about Bronwyn Jupp and Dunedin City Property Management.</h2>
+          <p>
+            The points below are a tenant-supplied account based on tenancy records and correspondence.
+            They are presented as allegations and should be checked against the original documents and
+            relevant New Zealand authorities before being treated as established facts.
+          </p>
+        </div>
+        <div className="concerns-list">
+          {documentedConcerns.map((concern, index) => (
+            <article className="concern-card" key={concern.title}>
+              <span className="concern-number">{String(index + 1).padStart(2, '0')}</span>
+              <div>
+                <h3>{concern.title}</h3>
+                <p>{concern.detail}</p>
+              </div>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="share-section" id="share">
