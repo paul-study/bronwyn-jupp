@@ -57,6 +57,15 @@ const documentedConcerns = [
   },
 ]
 
+const publicDecisions = [
+  {
+    title: 'Cutlers Limited (trading as Cutlers Property Management) — Dunedin smoke alarms',
+    detail: 'Tenancy Services reports that the Tenancy Tribunal ordered Cutlers Limited to pay $6,450 in exemplary damages to MBIE on behalf of affected tenants for breaches of smoke alarm and maintenance requirements. The official summary says the Tribunal found Cutlers had acted intentionally; a fire occurred at a two-dwelling Dunedin property in September 2022, and the alarms did not activate. It also reports that the property manager recorded an upstairs alarm as compliant without testing it or recording its expiry date. The published summary describes an order against Cutlers Limited, not an individual property manager.',
+    source: 'Official Tenancy Services case summary',
+    href: 'https://www.tenancy.govt.nz/about-tenancy-services/news/dunedin-property-management-company-to-pay-damages-for-breaching-smoke-alarm-requirements/',
+  },
+]
+
 function App() {
   const [entry, setEntry] = useState(null)
   const [submitted, setSubmitted] = useState(false)
@@ -145,6 +154,35 @@ function App() {
             </article>
           ))}
         </div>
+      </section>
+
+      <section className="decisions-section" aria-labelledby="decisions-heading">
+        <div className="decisions-heading">
+          <p className="eyebrow">Official public record</p>
+          <h2 id="decisions-heading">Published Tribunal findings.</h2>
+          <p>
+            These summaries are attributed to the linked official source and limited to its account
+            of the decision. A finding about a company is not a finding about an individual employee.
+          </p>
+        </div>
+        <div className="decision-list">
+          {publicDecisions.map((decision) => (
+            <article className="decision-card" key={decision.title}>
+              <h3>{decision.title}</h3>
+              <p>{decision.detail}</p>
+              <a href={decision.href} target="_blank" rel="noreferrer">
+                {decision.source} <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+          ))}
+        </div>
+        <p className="decision-note">
+          No verified published court or Tribunal decision about Bronwyn Jupp was located in the
+          sources checked for this update. This search result is not proof that no such decision exists.
+          <a href="https://www.justice.govt.nz/tribunals/tenancy/orders/" target="_blank" rel="noreferrer">
+            Search official Tribunal orders <span aria-hidden="true">↗</span>
+          </a>
+        </p>
       </section>
 
       <section className="share-section" id="share">
