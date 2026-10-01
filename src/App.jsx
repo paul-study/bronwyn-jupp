@@ -154,6 +154,23 @@ function App() {
             </article>
           ))}
         </div>
+        <article className="decision-card article-source">
+          <h3>Related reporting: Dunedin rental prices</h3>
+          <p>
+            A 2020 report by Critic Te Ārohi identifies Bronwyn Jupp as advertising a five-bedroom
+            Forth Street property for $1,050 per week, excluding power and internet, with a $3,150
+            bond. It describes student criticism of the price and says Jupp was approached for
+            comment but did not respond. This is reporting about a rental advertisement and public
+            reaction, not a Tenancy Tribunal finding.
+          </p>
+          <a
+            href="https://www.critic.co.nz/news/article/8894/rental-properties-alarmingly-expensive"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Read the Critic Te Ārohi article <span aria-hidden="true">↗</span>
+          </a>
+        </article>
       </section>
 
       <section className="decisions-section" aria-labelledby="decisions-heading">
